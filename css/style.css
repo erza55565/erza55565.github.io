@@ -45,16 +45,6 @@ body {
 }
 
 .about {
-    padding: 2em;
     background: #312A31;
     color: #f3f2f3;
-}
-
-.about img {
-    height: 100%;
-    width: 100%;
-}
-
-.about .row {
-    padding: 0 3em;
 }

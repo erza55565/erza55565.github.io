@@ -1,4 +1,4 @@
-let cards = [{
+let cardsArray = [{
         'headerTitle': 'Airlines online booking',
         'header': 'Implementation of a couple microservices for the airlines booking system. Booking tickets, processing flights, routing, prices, discounts, etc. Also, the project had the internal layers of system services for big data processing such as recalculation prices, flight shifting, optimization, etc. ',
         'body': 'Team: 3 backend, 2 frontend, 1 devops. ' +
@@ -126,7 +126,7 @@ let cards = [{
             'Technical consultations.' +
             'Troubleshooting. ' +
             'Performance Improvement',
-        'footerURL': 'MoreInfo: https://skladn1.com/'
+        'footerResult': 'MoreInfo: https://skladn1.com/'
     }, {
         'headerTitle': 'Gran-Call',
         'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
@@ -135,7 +135,7 @@ let cards = [{
         'footerList': 'Architecture/Infrastructure.' +
             'Migration to the Cloud.' +
             'Technical consultations.',
-        'footerURL': 'MoreInfo: http://www.gran-call.ru/'
+        'footerResult': 'MoreInfo: http://www.gran-call.ru/'
     }, {
         'headerTitle': 'Messaging app with blockchain wallet',
         'header': 'Messaging app with blockchain wallet, location based search of nearby users, Bluetooth and web support',
@@ -184,34 +184,26 @@ let cards = [{
     }
 ];
 
-const Item = ({ headerTitle, header, body, footerList, footerResult, footerURL }) => `
+const card = ({ headerTitle, header, body, footerList, footerResult }) => `
+<div class="col-lg-4 col-md-6 col-sm-12 mt-4 align-items-stretchs d-flex">
 <div class="card">
-
 <div class="card-header">
-    <h4 class="card-title text-center">Airlines online booking</h4>
-    <p class="card-text"> Implementation of a couple microservices for the airlines booking system. Booking tickets, processing flights, routing, prices, discounts, etc. Also, the project had the internal layers of system services for big data processing
-        such as recalculation prices, flight shifting, optimization, etc.</p>
+    <h4 class="card-title text-center">${headerTitle}</h4>
+    <p class="card-text">${header}</p>
 </div>
 <div class="card-body">
     <p class="card-text">
-        <b>Team:</b> 3 backend, 2 frontend, 1 devops.<br>
-        <b>Language:</b> Java / Scala<br>
-        <b>Technologies:</b> Docker, Spark, RabbitMQ, Cassandra<br>
-        <b>Platform:</b> Cross-platform<br>
-        <b>Role:</b> Architect / Core developer
+    ${body}
     </p>
 </div>
 <div class="card-footer">
-    <ul>
-        <li> Architecture.</li>
-        <li> BackEnd core features development.</li>
-        <li> Technical consultations.</li>
-        <li> Troubleshooting.</li>
-        <li> Interviewing new employers.</li>
-        <li> Solving difficult technical issues</li>
-    </ul>
-    The customer has improved speed of transaction processing (booking, searching, etc) Optimization of logistics and fees has been implemented.
-
+    ${footerList}
+    ${footerResult}
+</div>
 </div>
 </div>
 `;
+
+$(document).ready(function() {
+    $('#cards').html(cardsArray.map(card).join('\n'));
+});

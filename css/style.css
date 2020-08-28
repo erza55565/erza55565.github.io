@@ -1,3 +1,7 @@
+body h1 {
+    font-weight: normal;
+}
+
 .navbar {
     background: #312A31;
 }
@@ -6,17 +10,12 @@
     font-weight: bold;
 }
 
-.nav-link {
-    margin-right: 1em;
+.navbar .border-right {
+    border-color: #AEB4B3 !important;
 }
 
 body {
     position: relative;
-}
-
-.portfolio {
-    position: relative;
-    margin: 6em 0;
 }
 
 .card-title {
@@ -45,6 +44,33 @@ body {
 }
 
 .about {
+    background: #312A31;
+    color: #f3f2f3;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-color: #312A31;
+    border-radius: 0;
+}
+
+.contact-form .btn-primary {
+    background: #556471;
+    border-color: #556471;
+    border-radius: 0;
+}
+
+.contact-form .btn-primary:hover {
+    background: #312A31;
+    border-color: #312A31;
+}
+
+.contact-form .btn-primary:active {
+    background: #312A31 !important;
+    border-color: #312A31 !important;
+}
+
+.footer {
     background: #312A31;
     color: #f3f2f3;
 }

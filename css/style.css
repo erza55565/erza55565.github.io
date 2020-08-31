@@ -6,16 +6,13 @@ body h1 {
     background: #312A31;
 }
 
-.navbar-brand {
-    font-weight: bold;
-}
-
 .navbar .border-right {
     border-color: #AEB4B3 !important;
 }
 
 body {
     position: relative;
+    font-family: 'Lato', sans-serif;
 }
 
 .card-title {
@@ -46,10 +43,16 @@ body {
     color: #f3f2f3;
 }
 
+.about img {
+    width: inherit;
+    height: inherit;
+}
+
 .contact-form input,
 .contact-form textarea {
     border-color: #312A31;
     border-radius: 0;
+    transition: none !important;
 }
 
 .contact-form .btn-primary {
@@ -71,9 +74,4 @@ body {
 .footer {
     background: #312A31;
     color: #f3f2f3;
-}
-
-.img-fluid {
-    width: 100%;
-    height: 100%;
 }

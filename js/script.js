@@ -15,7 +15,7 @@ let cardsArray = [{
         'footerResult': 'The customer has improved speed of transaction processing (booking, searching, etc) Optimization of logistics and fees has been implemented. '
     },
     {
-        'headerTitle': 'Payment transaction based on blockchain infrastructure',
+        'headerTitle': 'Payment banking based on blockchain infrastructure',
         'header': 'Research and investigation which blockchain network will be the best for specific payment transaction. The main idea is comparing, analyze, and select appropriate blockchain network for the specific business transaction. The goal was transaction size, time and confirmation.',
         'body': 'Team: 3 backend, 3 frontend, 2 devops. ' +
             'MoreInfo: https://github.com/imaxfp/blockchain-workbench-rest' +
@@ -32,7 +32,7 @@ let cardsArray = [{
         'footerResult': 'The POC has been launched. Customer tested transaction and selected appropriate technology for the production product  '
     },
     {
-        'headerTitle': 'Supply chain solution for delivery cargo',
+        'headerTitle': 'Supply chain solution for cargo delivery',
         'header': 'The main idea of the project is solving trust issue between businesses and merchants. Exclude human errors and proxies agents. Speed up transaction processing. ',
         'body': 'Team: 5 backend, 4 frontend, 2 devops. ' +
             'Language: Scala  ' +
@@ -47,7 +47,7 @@ let cardsArray = [{
             'Solving difficult technical issues ',
         'footerResult': 'The project was launched in the production mode. Customer solved the issue with trust between different counterparties. Excluded agents and counterparties. Saved money and time. '
     }, {
-        'headerTitle': 'ML based solution for searching',
+        'headerTitle': 'Prediction and searching financial instruments based on ML/AI algorithms',
         'header': 'ML based solution for searching similarities of different trading securities, bonds, etc. The main goal of the project - analyzing, classification and select closest financial instruments by the selected features. The project use mixed approach wit supervised and unsupervised learning. ',
         'body': 'Team: 4 backend, 2 frontend, 1 devops. ' +
             'Language: Python, Java   ' +
@@ -187,16 +187,16 @@ let cardsArray = [{
 const card = ({ headerTitle, header, body, footerList, footerResult }) => `
 <div class="col-lg-4 col-md-6 col-sm-12 mt-4 align-items-stretchs d-flex">
 <div class="card">
-<div class="card-header">
+<div class="card-header flex-fill">
     <h4 class="card-title text-center">${headerTitle}</h4>
     <p class="card-text">${header}</p>
 </div>
-<div class="card-body">
+<div class="card-body flex-fill">
     <p class="card-text">
     ${body}
     </p>
 </div>
-<div class="card-footer">
+<div class="card-footer flex-fill">
     ${footerList}
     ${footerResult}
 </div>

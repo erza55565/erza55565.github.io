@@ -54,11 +54,28 @@ body {
     color: #f3f2f3;
 }
 
+.portfolio .btn {
+    color: #f3f2f3;
+    background: #556471;
+}
+
+.portfolio .btn:focus {
+    box-shadow: none;
+}
+
+.portfolio .btn:active {
+    box-shadow: 0 0 0 0.3em #64717c;
+}
+
+.portfolio .btn:hover {
+    background: #373f46;
+}
+
 .contact-form input,
 .contact-form textarea {
     border-color: #312A31;
     border-radius: 0;
-    transition: none !important;
+    box-shadow: none !important;
 }
 
 .contact-form .btn-primary {

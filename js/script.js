@@ -191,6 +191,7 @@ const card = ({ headerTitle, header, body, footerList, footerResult }) => `
     <h4 class="card-title text-center">${headerTitle}</h4>
     <p class="card-text">${header}</p>
 </div>
+
 <div class="card-body flex-fill">
     <p class="card-text">
     ${body}

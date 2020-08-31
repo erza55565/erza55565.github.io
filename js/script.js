@@ -207,3 +207,7 @@ const card = ({ headerTitle, header, body, footerList, footerResult }) => `
 $(document).ready(function() {
     $('#cards').html(cardsArray.map(card).join('\n'));
 });
+
+$(document).ready(function() {
+    $('.header').height($(window).height());
+})

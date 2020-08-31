@@ -15,6 +15,17 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.header {
+    background-image: url('../images/headerback.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.header h1 {
+    color: #312A31;
+}
+
 .card-title {
     color: #312A31;
 }
@@ -41,11 +52,6 @@ body {
 .about {
     background: #312A31;
     color: #f3f2f3;
-}
-
-.about img {
-    width: inherit;
-    height: inherit;
 }
 
 .contact-form input,

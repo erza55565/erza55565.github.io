@@ -71,6 +71,11 @@ body {
     background: #373f46;
 }
 
+.contact-form {
+    background: #312A31;
+    color: #f3f2f3;
+}
+
 .contact-form input,
 .contact-form textarea {
     border-color: #312A31;
@@ -78,20 +83,26 @@ body {
     box-shadow: none !important;
 }
 
-.contact-form .btn-primary {
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 0.2em solid #64717c;
+}
+
+.contact-form .btn {
     background: #556471;
-    border-color: #556471;
-    border-radius: 0;
+    color: #f3f2f3;
 }
 
-.contact-form .btn-primary:hover {
-    background: #312A31;
-    border-color: #312A31;
+.contact-form .btn:focus {
+    box-shadow: none !important;
 }
 
-.contact-form .btn-primary:active {
-    background: #312A31 !important;
-    border-color: #312A31 !important;
+.contact-form .btn:hover {
+    background: #373f46;
+}
+
+.contact-form .btn:active {
+    box-shadow: 0 0 0 0.3em #64717c !important;
 }
 
 .footer {

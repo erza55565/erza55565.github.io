@@ -213,9 +213,9 @@ const card = ({ headerTitle, header, body, footerList, footerResult }) => {
 };
 
 $(document).ready(function() {
-    $('#cards').html(cardsArray.map(card).join('<br>'));
-});
-
-$(document).ready(function() {
     $('.header').height($(window).height());
 })
+
+$(document).ready(function() {
+    $('#cards').html(cardsArray.map(card).join('<br>'));
+});

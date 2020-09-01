@@ -1,5 +1,6 @@
 body h1 {
     font-weight: normal;
+    font-size: 4.5vh !important;
 }
 
 .navbar {
@@ -36,7 +37,7 @@ body {
 
 .description h1 {
     position: relative;
-    color: #F97300;
+    color: #312A31;
 }
 
 .card-title {

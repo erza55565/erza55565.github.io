@@ -10,7 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target="#collapsibleNavbar">
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
         <a class="navbar-brand" href="#">INGENIUM-SOFT</a>
@@ -36,7 +36,7 @@
     <div class=" header" id="home">
         <div class="overlay"></div>
         <div class="container d-flex align-items-center">
-            <div class="description py-sm-5">
+            <div class="description">
                 <h1> Hello ,Welcome To My official Website
                     <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
@@ -49,7 +49,7 @@
         <div class="container py-lg-5 py-md-2 py-sm-5 py-4 px-0">
             <div class="row py-md-2 py-lg-4 py-2">
                 <div class="col-lg-2 col-md-4 col-sm-12 order-md-12">
-                    <img src="images/IvanZhuravel.jpg" class="img-fluid mx-auto d-block">
+                    <img src="images/IvanZhuravel.jpg" class="img-fluid mx-auto d-block rounded-circle">
                 </div>
                 <div class="col-lg-10 col-md-8 col-sm-12">
                     <h3>Ivan Zhuravel</h3>
@@ -61,7 +61,7 @@
             </div>
             <div class="row  py-lg-4 py-md-2 py-2">
                 <div class="col-lg-2 col-md-4 col-sm-12">
-                    <img src="images/max.jpg" class="img-fluid mx-auto d-block">
+                    <img src="images/max.jpg" class="img-fluid mx-auto d-block rounded-circle">
                 </div>
                 <div class="col-lg-10 col-md-8 col-sm-12">
                     <h3>Maxim</h3>
@@ -74,19 +74,21 @@
         </div>
     </div>
 
-    <div class="portfolio container py-5" id="portfolio">
-        <h1 class="text-center py-5">Portfolio</h1>
-        <button class="btn btn-lg d-block mx-auto my-5" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Show more
-          </button>
-        <div class="collapse" id="collapseExample">
-            <div id="cards" class="card-group row">
+    <div class="portfolio container py-md-4 pt-3" id="portfolio">
+        <h1 class="text-center py-lg-4">Portfolio</h1>
+
+        <div id="cards" class="card-group row">
+            <button class="btn btn-lg d-block mx-auto my-5" type="button" data-toggle="collapse" data-target="#collapseCards" aria-expanded="false" aria-controls="collapseExample">
+                Show more
+              </button>
+            <div class="collapse card-group row" id="collapseCards">
             </div>
+
         </div>
     </div>
 
     <div class="contact-form container-fluid " id="contact">
-        <div class="container py-5">
+        <div class="container py-lg-5 py-md-2">
             <form>
                 <div class="row my-5">
                     <div class="col-lg-6 col-md-6 col-sm-12">

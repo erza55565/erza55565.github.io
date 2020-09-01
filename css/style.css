@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background-image: url('../images/headerback.jpg');
+    background-image: url('../images/net.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.79);
+    background: rgba(244, 244, 244, 0.6);
 }
 
 .header .container {

@@ -23,7 +23,7 @@ let cardsArray = [{
             '<b>Technologies:</b> Docker, r3Corda, Hyperledger, Ethereum.<br>' +
             '<b>Platform:</b> Cross-platform<br>' +
             '<b>Role:</b> Architect / Core developer',
-        'footerList': '<li>Architecture.<li>' +
+        'footerList': '<li>Architecture.</li>' +
             '<li>BackEnd core features development.</li>' +
             '<li>Technical consultations.</li>' +
             '<li>Troubleshooting.</li>' +
@@ -218,5 +218,6 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    $('#cards').html(cardsArray.map(card).join('<br>'));
+    $('#cards').prepend(cardsArray.slice(0, 3).map(card).join(' '));
+    $('#collapseCards').html(cardsArray.slice(3, cardsArray.length).map(card).join(' '));
 });

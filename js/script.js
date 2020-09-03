@@ -1,6 +1,7 @@
 let cardsArray = [{
         'headerTitle': 'Airlines online booking',
         'header': 'Implementation of a couple microservices for the airlines booking system. Booking tickets, processing flights, routing, prices, discounts, etc. Also, the project had the internal layers of system services for big data processing such as recalculation prices, flight shifting, optimization, etc. ',
+        'link': '',
         'team': '3 backend, 2 frontend, 1 devops',
         'language': 'Java, Scala',
         'technologies': 'Docker, Spark, RabbitMQ, Cassandra',
@@ -16,21 +17,23 @@ let cardsArray = [{
     }, {
         'headerTitle': 'Clubberspot',
         'header': 'Clubberspot - project which helps to provide safe organization of concerts between venues and musicants from 1 side, and free newsletter for providing information about entertaining events from other side ',
-        'team': '4 members of backend team, 3 members of frontend team, 2 members of mobile team, 1 member - infrastructure, 3 designers, 10 copywriters',
-        'moreInfo': '<a href="https://clubberspot.com/">https://clubberspot.com/</a>',
+        'link': '',
+        'team': '4 backend, 3 frontend, 2 mobile dev, 1 devops, 3 designers, 10 copywriters',
+
         'role': 'CTO',
         'footerList': '<li>Architecture.</li>' +
             '<li>BackEnd core features development.</li>' +
             '<li>Infrastructure deployment</li>' +
             '<li>Troubleshooting.</li>' +
             '<li>Preparing technical side of presentations for investors</li>',
-        'footerResult': ''
+        'footerResult': '<b>MoreInfo:</b> <a href="https://clubberspot.com/">https://clubberspot.com/</a>'
     },
     {
         'headerTitle': 'Payment banking based on blockchain infrastructure',
         'header': 'Research and investigation which blockchain network will be the best for specific payment transaction. The main idea is comparing, analyze, and select appropriate blockchain network for the specific business transaction. The goal was transaction size, time and confirmation.',
+        'link': '',
         'team': '3 backend, 3 frontend, 2 devops',
-        'moreInfo': '<a href="https://github.com/imaxfp/blockchain-workbench-rest">https://github.com/imaxfp/blockchain-workbench-rest</a> ',
+
         'language': 'Java, Scala',
         'technologies': 'Docker, r3Corda, Hyperledger, Ethereum.',
         'platform': 'Cross-platform',
@@ -41,11 +44,12 @@ let cardsArray = [{
             '<li>Troubleshooting.</li>' +
             '<li>Interviewing new employers.</li>' +
             '<li>Solving difficult technical issues.</li>',
-        'footerResult': 'The POC has been launched. Customer tested transaction and selected appropriate technology for the production product  '
+        'footerResult': 'The POC has been launched. Customer tested transaction and selected appropriate technology for the production product.<br><b>MoreInfo:</b> <a href="https://github.com/imaxfp/blockchain-workbench-rest">https://github.com/imaxfp/blockchain-workbench-rest</a>'
     },
     {
         'headerTitle': 'Supply chain solution for cargo delivery',
         'header': 'The main idea of the project is solving trust issue between businesses and merchants. Exclude human errors and proxies agents. Speed up transaction processing. ',
+        'link': '',
         'team': '5 backend, 4 frontend, 2 devops',
         'language': 'Scala',
         'technologies': 'Docker, r3Corda',
@@ -61,9 +65,10 @@ let cardsArray = [{
     }, {
         'headerTitle': 'Prediction and searching financial instruments based on ML/AI algorithms',
         'header': 'ML based solution for searching similarities of different trading securities, bonds, etc. The main goal of the project - analyzing, classification and select closest financial instruments by the selected features. The project use mixed approach wit supervised and unsupervised learning. ',
+        'link': '<b>Technologies and libs:</b> <a href="https://matplotlib.org">https://matplotlib.org</a>, <a href="https://scikit-learn.org">https://scikit-learn.org</a>, <a href="https://www.docker.com">https://www.docker.com</a>, <a href="https://pandas.pydata.org">https://pandas.pydata.org</a>',
         'team': '4 backend, 2 frontend, 1 devops',
         'language': 'Python, Java',
-        'links': '<a href="https://matplotlib.org">https://matplotlib.org</a>,  <a href="https://scikit-learn.org">https://scikit-learn.org</a>, <a href="https://www.docker.com">https://www.docker.com</a>, <a href="https://pandas.pydata.org">https://pandas.pydata.org</a>',
+
         'platform': 'Cross-platform',
         'role': 'Data scientist / Core developer ',
         'footerList': '<li>Data analyzing.</li>' +
@@ -75,9 +80,10 @@ let cardsArray = [{
     }, {
         'headerTitle': 'ML/AI based solution for prediction of volatility financial instruments',
         'header': 'The main idea is tracking selected financial indexes and features. Provide unsupervised cauterization algorithms and supervised learning based on big financial datasets.',
+        'link': '<b>Technologies and libs:</b> <a href="https://matplotlib.org">https://matplotlib.org</a>,  <a href="https://scikit-learn.org">https://scikit-learn.org</a>, <a href="https://www.docker.com">https://www.docker.com</a>, <a href="https://pandas.pydata.org">https://pandas.pydata.org</a>',
         'team': '4 backend, 2 frontend, 1 devops',
         'language': 'Python, Java',
-        'links': '<a href="https://matplotlib.org">https://matplotlib.org</a>,  <a href="https://scikit-learn.org">https://scikit-learn.org</a>, <a href="https://www.docker.com">https://www.docker.com</a>, <a href="https://pandas.pydata.org">https://pandas.pydata.org</a>',
+
         'platform': 'Cross-platform',
         'role': 'Data scientist / Core developer ',
         'footerList': '<li>Data analyzing.</li>' +
@@ -89,6 +95,7 @@ let cardsArray = [{
     }, {
         'headerTitle': 'The project was connected with financial and trading industry',
         'header': 'The main idea is clusterization and finding similarities between trading stocks.',
+        'link': '',
         'team': '5 backend, 4 frontend, 2 devops',
         'language': 'Python, Java',
         'technologies': 'Docker, spring boot, hibernate,  sklearn, pandas, matplotlib, etc',
@@ -103,6 +110,7 @@ let cardsArray = [{
     }, {
         'headerTitle': '',
         'header': '',
+        'link': '',
         'language': 'Scala',
         'technologies': 'r3Corda, Java, Docker, Postgres, Akka, Spring, ReactJS',
         'platform': 'Cross-platform',
@@ -119,6 +127,7 @@ let cardsArray = [{
     }, {
         'headerTitle': 'Sklad#1',
         'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine',
+        'link': '',
         'team': '4 developers',
         'role': 'Architect',
         'footerList': '<li>Architecture.</li>' +
@@ -126,19 +135,21 @@ let cardsArray = [{
             '<li>Technical consultations.</li>' +
             '<li>Troubleshooting.</li>' +
             '<li>Performance Improvement.</li>',
-        'footerResult': 'MoreInfo : <a href="https://skladn1.com/">https://skladn1.com/</a>'
+        'footerResult': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>'
     }, {
         'headerTitle': 'Gran-Call',
         'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
+        'link': '',
         'team': '7 developers',
         'role': 'Senior Software Engineer/ DevOps',
         'footerList': '<li>Architecture/Infrastructure.</li>' +
             '<li>Migration to the Cloud.</li>' +
             '<li>Technical consultations.</li>',
-        'footerResult': 'MoreInfo: <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>'
+        'footerResult': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>'
     }, {
         'headerTitle': 'Messaging app with blockchain wallet',
         'header': 'Messaging app with blockchain wallet, location based search of nearby users, Bluetooth and web support',
+        'link': '',
         'team': '2 mobile developers',
         'language': 'Kotlin',
         'technologies': 'Android SDK, Coroutines, Room, Koin',
@@ -151,6 +162,7 @@ let cardsArray = [{
     }, {
         'headerTitle': 'Corporate messaging platform',
         'header': 'Corporate messaging platform based on gRPC. Messaging features, voice and video calls, file and location sharing, independent corporate server',
+        'link': '',
         'team': '2 mobile developers',
         'language': 'Kotlin',
         'technologies': 'gRPC, RX Android, Room, Koin',
@@ -162,6 +174,7 @@ let cardsArray = [{
     }, {
         'headerTitle': 'Mobile client for private taxi service',
         'header': 'Rider/Driver apps, food delivery, navigation',
+        'link': '',
         'team': '5 mobile developers',
         'language': 'Java',
         'technologies': 'RX Android, SQLite, Eventbus, Google Maps Api',
@@ -173,6 +186,7 @@ let cardsArray = [{
     }, {
         'headerTitle': 'App for managing smart home ecosystem',
         'header': 'App for managing smart home ecosystem including thermostats, sensors, smart bulbs, etc.',
+        'link': '',
         'team': '5 mobile developers',
         'language': 'Java',
         'technologies': 'RX Android, Dagger 2, Mockito',
@@ -184,12 +198,12 @@ let cardsArray = [{
     }
 ];
 
-let button = (tag, iconClass) => `<button class="btn mr-3 mb-3" type="button" disabled><i class="fas ${iconClass}"></i>${tag}</button>`;
-let teamTag = (tag) => button(tag, "fa-user-friends");
+let button = (tag, iconClass) => `<button class="btn mr-2 mb-2" type="button" disabled><i class="fas ${iconClass}"></i>${tag}</button>`;
+let teamTag = (tag) => button(tag, "fa-user-friends px-1");
 let languageTag = (tag) => button(tag, "fa-cog px-1");
 let technologiesTag = (tag) => button(tag, "fa-cog px-1");
-let platformTag = (tag) => button(tag, "fa-laptop");
-let roleTag = (tag) => button(tag, "fa-user-cog");
+let platformTag = (tag) => button(tag, "fa-laptop px-1");
+let roleTag = (tag) => button(tag, "fa-user-cog px-1");
 let buildTag = (tag, tagFunction) => {
     if (!tag) {
         return '';
@@ -207,7 +221,7 @@ const buildBody = (team, language, technologies, platform, role) => {
     return body;
 }
 
-const card = ({ headerTitle, header, team, language, technologies, platform, role, footerList, footerResult }) => {
+const card = ({ headerTitle, header, team, language, technologies, link, platform, role, footerList, footerResult }) => {
 
     let body = buildBody(team, language, technologies, platform, role);
 
@@ -218,13 +232,19 @@ const card = ({ headerTitle, header, team, language, technologies, platform, rol
     <p class="card-text text-justify">${header}</p>
 </div>
 <div class="card-body flex-fill">
-    <p class="card-text text-center">
+    <p class="card-text">
+    <div class='mb-3 text-justify'>
+    ${link}
+    </div>
+    <div class='text-center'>
     ${body}
+    </div>
     </p>
-    <button class="btn content_toggle mx-auto btn-block flex-fill" type="button">
+</div>
+<button class="btn content_toggle mx-auto btn-block" type="button">
         Tasks performed<i class="fas fa-chevron-down pl-2" id="chevron-icon"></i>
     </button>
-</div>
+
 <div class="card-footer text-justify flex-fill" style="display: none;">
     ${footerList}
     ${footerResult}

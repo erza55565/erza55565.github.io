@@ -17,6 +17,34 @@ body h1 {
     }
 }
 
+#headline {
+    font-size: 5vh !important;
+}
+
+.navbar-brand i {
+    font-size: 3.5vh;
+}
+
+body h1 b {
+    font-weight: normal;
+    text-align: justify;
+    font-size: 3vh;
+}
+
+@media (min-width: 768px) {
+    body h1 b {
+        font-size: 3vh;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px) {
+    body h1 b {
+        font-size: 6vh;
+        font-weight: bold;
+    }
+}
+
 .navbar {
     background: #312A31;
 }
@@ -42,7 +70,7 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.6);
+    background: rgba(244, 244, 244, 0.75);
 }
 
 .header .container {

@@ -13,7 +13,7 @@
 <body data-spy="scroll" data-target="#collapsibleNavbar">
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
-        <a class="navbar-brand" href="#">INGENIUM-SOFT</a>
+        <a class="navbar-brand px-3" href="#"><i class="fas fa-laptop-code px-3"></i><b>INGENIUM-SOFT</b></a>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -37,8 +37,10 @@
         <div class="overlay"></div>
         <div class="container d-flex align-items-center">
             <div class="description">
-                <h1> We're about providing high-quality IT service for startups and small businesses. Our team had a lot of experience in startups, preparing PoCs with different technologies (high-load, blockchain, ML) and for different kind of businesses
-                    (fin-tech, entertainment, adv-tech, etc.). We can help you on technical side and also can generate ideas how to improve your idea, prepare it for country's market and many other things. you will never regret to choose us.
+                <h1>
+                    <div id="headline" class="mb-4 font-weight-bold text-left">We're about providing high-quality IT service for startups and small businesses.</div>
+                    <p>Our team had a lot of experience in startups, preparing PoCs with different technologies (high-load, blockchain, ML) and for different kind of businesses (fin-tech, entertainment, adv-tech, etc.). We can help you on technical side
+                        and also can generate ideas how to improve your idea, prepare it for country's market and many other things. you will never regret to choose us.</p>
                 </h1>
             </div>
         </div>
@@ -91,25 +93,31 @@
             <div class="row my-5">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <h1 class="pb-3 py-1">Get in Touch</h1>
-                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p class="pb-3">Please let us know if you have any ideas or propositions.
                     </p>
 
                     <p class="border-top pt-4"><i class="fas fa-map-marker-alt pr-2"></i>Kiev, Bogdana Hmelnytskogo Street, 20</p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 right">
-                    <form action="https://formsubmit.co/email@gmail.com" method="POST" target="_blank">
+                    <form id="contactForm" method="POST" target="_blank">
+                        <div id="msgSubmit" class="alert alert-dark alert-dismissible text-center" style="display: none;" role="alert">
+                            Message Submitted!
+                            <button type="button" class="close" onclick="$('#msgSubmit').hide()" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <input type="text" name="_honey" style="display:none">
                         <input type="hidden" name="_captcha" value="false">
                         <div class="form-row py-1">
                             <div class="form-group col-md-6">
-                                <input type="email" name="email" placeholder="Enter your email" class="form-control" id="inputEmail4">
+                                <input type="email" name="email" placeholder="Enter your email" class="form-control" id="email" required="required" data-error="Lastname is required.">
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="text" name="name" placeholder="Enter your name" class="form-control">
+                                <input type="text" name="name" placeholder="Enter your name" class="form-control" id="name" required="required" data-error="Lastname is required.">
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-error="Lastname is required."></textarea>
                         </div>
                         <button type="submit" class="btn my-4">Send</button>
                     </form>

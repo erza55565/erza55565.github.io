@@ -225,13 +225,13 @@ const card = ({ headerTitle, header, team, language, technologies, link, platfor
 
     let body = buildBody(team, language, technologies, platform, role);
 
-    return `<div class="col-lg-6 col-md-6 col-sm-12 mt-4 align-items-stretchs d-flex">
-<div class="card">
-<div class="card-header flex-fill">
+    return `<div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+<div class="card h-100">
+<div class="card-header">
     <h4 class="card-title text-center">${headerTitle}</h4>
     <p class="card-text text-justify">${header}</p>
 </div>
-<div class="card-body flex-fill">
+<div class="card-body">
     <p class="card-text">
     <div class='mb-3 text-justify'>
     ${link}
@@ -245,7 +245,7 @@ const card = ({ headerTitle, header, team, language, technologies, link, platfor
         Tasks performed<i class="fas fa-chevron-down pl-2" id="chevron-icon"></i>
     </button>
 
-<div class="card-footer text-justify flex-fill" style="display: none;">
+<div class="card-footer text-justify" style="display: none;">
     ${footerList}
     ${footerResult}
 </div>
@@ -257,20 +257,47 @@ const card = ({ headerTitle, header, team, language, technologies, link, platfor
 
 $(document).ready(function() {
     $('.header').height($(window).height());
-})
-
-
-$(document).ready(function() {
     $('#cards').prepend(cardsArray.slice(0, 2).map(card).join(' '));
     $('#collapseCards').html(cardsArray.slice(2, cardsArray.length).map(card).join(' '));
-});
-
-$(document).ready(function() {
     $('.content_toggle').each(function() {
         $(this).click(function() {
-            $('.card-footer').slideToggle(300);
+            $(this).next('.card-footer').slideToggle(300);
             $('#chevron-icon', this).toggleClass('fa-chevron-down fa-chevron-up');
             return false;
         });
     })
 });
+
+$("#contactForm").submit(function(event) {
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
+
+function submitForm() {
+
+    $.ajax({
+        type: "POST",
+        url: "https://formsubmit.co/ajax/fb70276532d4e44fb991370121e8d89e",
+        data: {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            message: $("#message").val(),
+            _honey: $("input[name$='_honey']").val(),
+            _captcha: false
+        },
+        datatype: "json",
+        success: function(result) {
+            var data = $.parseJSON(result);
+            console.log(data);
+            console.log(data.success);
+            if (data.success) {
+                formSuccess();
+            }
+        }
+    });
+}
+
+function formSuccess() {
+    $("#msgSubmit").show();
+}

@@ -17,7 +17,7 @@ let cardsArray = [{
     }, {
         'headerTitle': 'Clubberspot',
         'header': 'Clubberspot - project which helps to provide safe organization of concerts between venues and musicants from 1 side, and free newsletter for providing information about entertaining events from other side ',
-        'link': '',
+        'link': '<b>MoreInfo:</b> <a href="https://clubberspot.com/">https://clubberspot.com/</a>',
         'team': '4 backend, 3 frontend, 2 mobile dev, 1 devops, 3 designers, 10 copywriters',
 
         'role': 'CTO',
@@ -26,7 +26,7 @@ let cardsArray = [{
             '<li>Infrastructure deployment</li>' +
             '<li>Troubleshooting.</li>' +
             '<li>Preparing technical side of presentations for investors</li>',
-        'footerResult': '<b>MoreInfo:</b> <a href="https://clubberspot.com/">https://clubberspot.com/</a>'
+        'footerResult': ''
     },
     {
         'headerTitle': 'Payment banking based on blockchain infrastructure',
@@ -108,26 +108,9 @@ let cardsArray = [{
             '<li>Troubleshooting.</li>',
         'footerResult': 'Pipeline for processing and prediction stocks was launched. Customer has got fast tool for researching and finding similarities of stocks by custom features. '
     }, {
-        'headerTitle': '',
-        'header': '',
-        'link': '',
-        'language': 'Scala',
-        'technologies': 'r3Corda, Java, Docker, Postgres, Akka, Spring, ReactJS',
-        'platform': 'Cross-platform',
-        'role': 'CTO ',
-        'footerList': '<li>Architecture.</li>' +
-            '<li>BackEnd, FrontEnd, Infrastructure organization.</li>' +
-            '<li>Saving human resources(avoiding burnout in fast-changeable environment with possibility to work under pressure, etc).</li>' +
-            '<li>Saving costs.</li>' +
-            '<li>Interviewing new employers.</li>' +
-            '<li>Long-term strategy of delivery.</li>' +
-            '<li>Communicating with investor representatives.</li>' +
-            '<li>Generating new ideas.</li>',
-        'footerResult': ''
-    }, {
         'headerTitle': 'Sklad#1',
         'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine',
-        'link': '',
+        'link': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>',
         'team': '4 developers',
         'role': 'Architect',
         'footerList': '<li>Architecture.</li>' +
@@ -135,17 +118,17 @@ let cardsArray = [{
             '<li>Technical consultations.</li>' +
             '<li>Troubleshooting.</li>' +
             '<li>Performance Improvement.</li>',
-        'footerResult': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>'
+        'footerResult': ''
     }, {
         'headerTitle': 'Gran-Call',
         'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
-        'link': '',
+        'link': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>',
         'team': '7 developers',
         'role': 'Senior Software Engineer/ DevOps',
         'footerList': '<li>Architecture/Infrastructure.</li>' +
             '<li>Migration to the Cloud.</li>' +
             '<li>Technical consultations.</li>',
-        'footerResult': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>'
+        'footerResult': ''
     }, {
         'headerTitle': 'Messaging app with blockchain wallet',
         'header': 'Messaging app with blockchain wallet, location based search of nearby users, Bluetooth and web support',
@@ -228,7 +211,7 @@ const card = ({ headerTitle, header, team, language, technologies, link, platfor
     return `<div class="col-lg-6 col-md-6 col-sm-12 mt-4">
 <div class="card h-100">
 <div class="card-header">
-    <h4 class="card-title text-center">${headerTitle}</h4>
+    <h5 class="card-title text-center">${headerTitle}</h5>
     <p class="card-text text-justify">${header}</p>
 </div>
 <div class="card-body">
@@ -278,13 +261,11 @@ function submitForm() {
 
     $.ajax({
         type: "POST",
-        url: "https://formsubmit.co/ajax/fb70276532d4e44fb991370121e8d89e",
+        url: "https://formsubmit.co/ajax/fcb3ef3ebf663fc83112ccdc5ed11906",
         data: {
             name: $("#name").val(),
             email: $("#email").val(),
-            message: $("#message").val(),
-            _honey: $("input[name$='_honey']").val(),
-            _captcha: false
+            message: $("#message").val()
         },
         datatype: "json",
         success: function(result) {

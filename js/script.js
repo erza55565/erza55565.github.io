@@ -1,5 +1,5 @@
 let cardsArray = [{
-        'image': '<img src="images/Clubberspot-1.jpg" class="img-fluid rounded">',
+        'image': '<img src="images/Clubberspot.png" class="img-fluid rounded">',
         'headerTitle': 'Clubberspot',
         'header': 'Clubberspot - project which helps to provide safe organization of concerts between venues and musicants from 1 side, and free newsletter for providing information about entertaining events from other side ',
         'link': '<b>MoreInfo:</b> <a href="https://clubberspot.com/">https://clubberspot.com/</a>',

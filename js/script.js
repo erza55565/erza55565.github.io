@@ -14,6 +14,31 @@ let cardsArray = [{
         'footerResult': ''
     },
     {
+        'image': '<img src="images/Sklad1.jpg" class="img-fluid rounded">',
+        'headerTitle': 'Sklad#1',
+        'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine.',
+        'link': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>',
+        'team': '4 developers',
+        'role': 'Architect',
+        'footerList': '<li>Architecture.</li>' +
+            '<li>BackEnd core features development.</li>' +
+            '<li>Technical consultations.</li>' +
+            '<li>Troubleshooting.</li>' +
+            '<li>Performance Improvement.</li>',
+        'footerResult': ''
+    }, {
+        'image': '<img src="images/Gran-Call.jpg" class="img-fluid rounded">',
+        'headerTitle': 'Gran-Call',
+        'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
+        'link': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>',
+        'team': '7 developers',
+        'role': 'Senior Software Engineer/ DevOps',
+        'footerList': '<li>Architecture/Infrastructure.</li>' +
+            '<li>Migration to the Cloud.</li>' +
+            '<li>Technical consultations.</li>',
+        'footerResult': ''
+    },
+    {
         'image': '<img src="images/blockchain infrastructure.jpg" class="img-fluid rounded">',
         'headerTitle': 'Payment banking based on blockchain infrastructure',
         'header': 'Research and investigation which blockchain network will be the best for specific payment transaction. The main idea is comparing, analyze, and select appropriate blockchain network for the specific business transaction. The goal was transaction size, time and confirmation.',
@@ -97,30 +122,6 @@ let cardsArray = [{
             '<li>Training models.</li>' +
             '<li>Troubleshooting.</li>',
         'footerResult': 'Pipeline for processing and prediction stocks was launched. Customer has got fast tool for researching and finding similarities of stocks by custom features. '
-    }, {
-        'image': '<img src="images/Sklad1.jpg" class="img-fluid rounded">',
-        'headerTitle': 'Sklad#1',
-        'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine.',
-        'link': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>',
-        'team': '4 developers',
-        'role': 'Architect',
-        'footerList': '<li>Architecture.</li>' +
-            '<li>BackEnd core features development.</li>' +
-            '<li>Technical consultations.</li>' +
-            '<li>Troubleshooting.</li>' +
-            '<li>Performance Improvement.</li>',
-        'footerResult': ''
-    }, {
-        'image': '<img src="images/Gran-Call.jpg" class="img-fluid rounded">',
-        'headerTitle': 'Gran-Call',
-        'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
-        'link': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>',
-        'team': '7 developers',
-        'role': 'Senior Software Engineer/ DevOps',
-        'footerList': '<li>Architecture/Infrastructure.</li>' +
-            '<li>Migration to the Cloud.</li>' +
-            '<li>Technical consultations.</li>',
-        'footerResult': ''
     }, {
         'image': '<img src="images/Messaging app.jpg" class="img-fluid rounded">',
         'headerTitle': 'Messaging app with blockchain wallet',

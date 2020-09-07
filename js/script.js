@@ -1,20 +1,5 @@
 let cardsArray = [{
-        'headerTitle': 'Airlines online booking',
-        'header': 'Implementation of a couple microservices for the airlines booking system. Booking tickets, processing flights, routing, prices, discounts, etc. Also, the project had the internal layers of system services for big data processing such as recalculation prices, flight shifting, optimization, etc. ',
-        'link': '',
-        'team': '3 backend, 2 frontend, 1 devops',
-        'language': 'Java, Scala',
-        'technologies': 'Docker, Spark, RabbitMQ, Cassandra',
-        'platform': 'Cross-platform',
-        'role': 'Architect / Core developer',
-        'footerList': '<li>Architecture.</li>' +
-            '<li>BackEnd core features development.</li>' +
-            '<li>Technical consultations.</li>' +
-            '<li>Troubleshooting.</li>' +
-            '<li>Interviewing new employers.</li>' +
-            '<li>Solving difficult technical issues.</li>',
-        'footerResult': 'The customer has improved speed of transaction processing (booking, searching, etc) Optimization of logistics and fees has been implemented. '
-    }, {
+        'image': '<img src="images/Clubberspot-1.jpg" class="img-fluid rounded">',
         'headerTitle': 'Clubberspot',
         'header': 'Clubberspot - project which helps to provide safe organization of concerts between venues and musicants from 1 side, and free newsletter for providing information about entertaining events from other side ',
         'link': '<b>MoreInfo:</b> <a href="https://clubberspot.com/">https://clubberspot.com/</a>',
@@ -29,9 +14,10 @@ let cardsArray = [{
         'footerResult': ''
     },
     {
+        'image': '<img src="images/blockchain infrastructure.jpg" class="img-fluid rounded">',
         'headerTitle': 'Payment banking based on blockchain infrastructure',
         'header': 'Research and investigation which blockchain network will be the best for specific payment transaction. The main idea is comparing, analyze, and select appropriate blockchain network for the specific business transaction. The goal was transaction size, time and confirmation.',
-        'link': '',
+        'link': '<b>MoreInfo:</b> <a href="https://github.com/imaxfp/blockchain-workbench-rest">https://github.com/imaxfp/blockchain-workbench-rest</a>',
         'team': '3 backend, 3 frontend, 2 devops',
 
         'language': 'Java, Scala',
@@ -44,9 +30,10 @@ let cardsArray = [{
             '<li>Troubleshooting.</li>' +
             '<li>Interviewing new employers.</li>' +
             '<li>Solving difficult technical issues.</li>',
-        'footerResult': 'The POC has been launched. Customer tested transaction and selected appropriate technology for the production product.<br><b>MoreInfo:</b> <a href="https://github.com/imaxfp/blockchain-workbench-rest">https://github.com/imaxfp/blockchain-workbench-rest</a>'
+        'footerResult': 'The POC has been launched. Customer tested transaction and selected appropriate technology for the production product.'
     },
     {
+        'image': '<img src="images/Supply chain.jpg" class="img-fluid rounded">',
         'headerTitle': 'Supply chain solution for cargo delivery',
         'header': 'The main idea of the project is solving trust issue between businesses and merchants. Exclude human errors and proxies agents. Speed up transaction processing. ',
         'link': '',
@@ -63,6 +50,7 @@ let cardsArray = [{
             '<li>Solving difficult technical issues.</li>',
         'footerResult': 'The project was launched in the production mode. Customer solved the issue with trust between different counterparties. Excluded agents and counterparties. Saved money and time. '
     }, {
+        'image': '<img src="images/Prediction and searching financial instruments.jpg" class="img-fluid rounded">',
         'headerTitle': 'Prediction and searching financial instruments based on ML/AI algorithms',
         'header': 'ML based solution for searching similarities of different trading securities, bonds, etc. The main goal of the project - analyzing, classification and select closest financial instruments by the selected features. The project use mixed approach wit supervised and unsupervised learning. ',
         'link': '<b>Technologies and libs:</b> <a href="https://matplotlib.org">https://matplotlib.org</a>, <a href="https://scikit-learn.org">https://scikit-learn.org</a>, <a href="https://www.docker.com">https://www.docker.com</a>, <a href="https://pandas.pydata.org">https://pandas.pydata.org</a>',
@@ -78,6 +66,7 @@ let cardsArray = [{
             '<li>Troubleshooting.</li>',
         'footerResult': 'Project provides pipeline for analyzing financial instruments. Finding similarities by custom selected features on the big market data sets. Financial portfolio optimization and allocation. Determination of perspective financial instrument by the predefined policies and features.'
     }, {
+        'image': '<img src="images/volatility financial instruments.jpg" class="img-fluid rounded">',
         'headerTitle': 'ML/AI based solution for prediction of volatility financial instruments',
         'header': 'The main idea is tracking selected financial indexes and features. Provide unsupervised cauterization algorithms and supervised learning based on big financial datasets.',
         'link': '<b>Technologies and libs:</b> <a href="https://matplotlib.org">https://matplotlib.org</a>,  <a href="https://scikit-learn.org">https://scikit-learn.org</a>, <a href="https://www.docker.com">https://www.docker.com</a>, <a href="https://pandas.pydata.org">https://pandas.pydata.org</a>',
@@ -93,6 +82,7 @@ let cardsArray = [{
             '<li>Troubleshooting.</li>',
         'footerResult': 'Traders and investors have got ML/AI helper for double-checking their hypothesis. Risk optimization, searching profitable trading strategies and perspective financial instruments.'
     }, {
+        'image': '<img src="images/financial and trading industry.jpg" class="img-fluid rounded">',
         'headerTitle': 'The project was connected with financial and trading industry',
         'header': 'The main idea is clusterization and finding similarities between trading stocks.',
         'link': '',
@@ -108,8 +98,9 @@ let cardsArray = [{
             '<li>Troubleshooting.</li>',
         'footerResult': 'Pipeline for processing and prediction stocks was launched. Customer has got fast tool for researching and finding similarities of stocks by custom features. '
     }, {
+        'image': '<img src="images/Sklad1.jpg" class="img-fluid rounded">',
         'headerTitle': 'Sklad#1',
-        'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine',
+        'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine.',
         'link': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>',
         'team': '4 developers',
         'role': 'Architect',
@@ -120,6 +111,7 @@ let cardsArray = [{
             '<li>Performance Improvement.</li>',
         'footerResult': ''
     }, {
+        'image': '<img src="images/Gran-Call.jpg" class="img-fluid rounded">',
         'headerTitle': 'Gran-Call',
         'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
         'link': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>',
@@ -130,8 +122,9 @@ let cardsArray = [{
             '<li>Technical consultations.</li>',
         'footerResult': ''
     }, {
+        'image': '<img src="images/Messaging app.jpg" class="img-fluid rounded">',
         'headerTitle': 'Messaging app with blockchain wallet',
-        'header': 'Messaging app with blockchain wallet, location based search of nearby users, Bluetooth and web support',
+        'header': 'Messaging app with blockchain wallet, location based search of nearby users, Bluetooth and web support.',
         'link': '',
         'team': '2 mobile developers',
         'language': 'Kotlin',
@@ -143,8 +136,9 @@ let cardsArray = [{
             '<li>Bluetooth messaging.</li>',
         'footerResult': ''
     }, {
+        'image': '<img src="images/messaging-platform.jpg" class="img-fluid rounded">',
         'headerTitle': 'Corporate messaging platform',
-        'header': 'Corporate messaging platform based on gRPC. Messaging features, voice and video calls, file and location sharing, independent corporate server',
+        'header': 'Corporate messaging platform based on gRPC. Messaging features, voice and video calls, file and location sharing, independent corporate server.',
         'link': '',
         'team': '2 mobile developers',
         'language': 'Kotlin',
@@ -155,8 +149,9 @@ let cardsArray = [{
             '<li>File sharing.</li>',
         'footerResult': ''
     }, {
+        'image': '<img src="images/private taxi service.jpg" class="img-fluid rounded">',
         'headerTitle': 'Mobile client for private taxi service',
-        'header': 'Rider/Driver apps, food delivery, navigation',
+        'header': 'Rider/Driver apps, food delivery, navigation.',
         'link': '',
         'team': '5 mobile developers',
         'language': 'Java',
@@ -167,6 +162,7 @@ let cardsArray = [{
             '<li>Implementing core functionality.</li>',
         'footerResult': ''
     }, {
+        'image': '<img src="images/App for managing smart home.jpg" class="img-fluid rounded">',
         'headerTitle': 'App for managing smart home ecosystem',
         'header': 'App for managing smart home ecosystem including thermostats, sensors, smart bulbs, etc.',
         'link': '',
@@ -204,12 +200,13 @@ const buildBody = (team, language, technologies, platform, role) => {
     return body;
 }
 
-const card = ({ headerTitle, header, team, language, technologies, link, platform, role, footerList, footerResult }) => {
+const card = ({ headerTitle, image, header, team, language, technologies, link, platform, role, footerList, footerResult }) => {
 
     let body = buildBody(team, language, technologies, platform, role);
 
-    return `<div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+    return ` <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
 <div class="card h-100">
+<div class="card-img-top">${image}</div>
 <div class="card-header">
     <h5 class="card-title text-center">${headerTitle}</h5>
     <p class="card-text text-justify">${header}</p>

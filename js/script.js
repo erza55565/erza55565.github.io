@@ -30,7 +30,7 @@ let cardsArray = [{
         'image': '<img src="images/Gran-Call.jpg" class="img-fluid rounded">',
         'headerTitle': 'Gran-Call',
         'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
-        'link': '<b>MoreInfo:</b> <a href="http://www.gran-call.ru/">http://www.gran-call.ru/</a>',
+        'link': '<b>MoreInfo:</b><a href="http://gran-soft.ru/">http://gran-soft.ru/</a>',
         'team': '7 developers',
         'role': 'Senior Software Engineer/ DevOps',
         'footerList': '<li>Architecture/Infrastructure.</li>' +

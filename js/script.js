@@ -205,33 +205,34 @@ const card = ({ headerTitle, image, header, team, language, technologies, link, 
 
     let body = buildBody(team, language, technologies, platform, role);
 
-    return ` <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
-<div class="card h-100">
-<div class="card-img-top">${image}</div>
-<div class="card-header">
-    <h5 class="card-title text-center">${headerTitle}</h5>
-    <p class="card-text text-justify">${header}</p>
-</div>
-<div class="card-body">
-    <p class="card-text">
-    <div class='mb-3 text-justify'>
-    ${link}
-    </div>
-    <div class='text-center'>
-    ${body}
-    </div>
-    </p>
-</div>
-<button class="btn content_toggle mx-auto btn-block" type="button">
-        Tasks performed<i class="fas fa-chevron-down pl-2" id="chevron-icon"></i>
-    </button>
+    return ` 
+<div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+    <div class="card h-100">
+        <div class="card-view">
+            <div class="card-img-top">${image}</div>
+            <div class="card-mask"></div>
+            <div class="text-center card-btn-off">${body}</div>
+        </div>
+        <div class="card-header">
+            <h5 class="card-title text-center">${headerTitle}</h5>
+            <p class="card-text text-justify">${header}</p>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                <div class="mb-3 text-justify">
+                    ${link}
+                </div>
+            </p>
+        </div>
+        <button class="btn content_toggle mx-auto btn-block" type="button">
+            Tasks performed<i class="fas fa-chevron-down pl-2" id="chevron-icon"></i>
+        </button>
 
-<div class="card-footer text-justify" style="display: none;">
-    ${footerList}
-    ${footerResult}
-</div>
-</div>
-</div>
+        <div class="card-footer text-justify" style="display: none;">
+            ${footerList}
+            ${footerResult}
+        </div>
+    </div>
 </div>
 `
 };

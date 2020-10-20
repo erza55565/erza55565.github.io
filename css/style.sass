@@ -1,0 +1,130 @@
+body
+	font-family: 'Roboto', sans-serif
+
+		
+
+@media (min-width: 768px)
+	body h1
+		font-size: 3vh
+		text-align: justify
+
+@media (min-width: 1200px)
+	body h1
+		font-size: 5vh
+
+@media (min-width: 1200px)
+	.header p
+		font-size: 3.5vh
+
+
+
+.navbar-brand i
+	font-size: 3.5vh
+
+.navbar
+	background: #312A31
+	.border-right
+		border-color: #AEB4B3 !important
+
+.header
+	background: url('../images/new_bg.jpg') no-repeat
+	color: #f3f2f3
+	p
+		font-weight: 400
+	.container
+		height: 100%
+
+.about
+	background: #312A31
+	color: #f3f2f3
+	font-size: 2.3vh
+	h2
+		font-size: 4vh
+		
+
+.portfolio
+	h1
+		font-size: 4vh
+	img
+		height: 100%
+		width: 100%
+
+.card-title
+	color: #312A31
+
+#collapseCards
+	margin-right: 0
+	margin-left: 0
+
+.card-body, .card-footer, .card-header
+	background: #8792A0 !important
+	color: #312A31
+
+.card
+	box-shadow: 0 0 1em #8792A0
+	a
+		color: #050564
+	&:hover
+		color: #21038b
+	&-view
+		position: relative
+		overflow: hidden
+		&:hover .card-mask,
+		&:hover .card-btn-off
+			opacity: 1
+	&-mask
+		background: rgba(9, 3, 17, 0.788)
+		opacity: 0
+		transition: all 0.4s ease-in-out;
+		position: absolute
+		overflow: hidden
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	&-btn-off
+		position: absolute
+		overflow: hidden
+		opacity: 0
+		transition: all 0.4s ease-in-out;
+		width: 100%
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	.btn:hover
+		background: #556471 !important
+
+
+
+.portfolio .btn
+	color: #f3f2f3
+	background: #556471
+	&:focus
+		box-shadow: none
+	&:active
+		box-shadow: 0 0 0 0.3em #64717c
+	&:hover
+		background: #373f46
+
+.contact-form
+	background: #312A31
+	color: #f3f2f3
+	input, textarea
+		border-color: #312A31
+		border-radius: 0
+		box-shadow: none !important
+	input:focus, textarea:focus
+		border: 0.2em solid #64717c
+	.btn
+		background: #556471
+		color: #f3f2f3
+		&:focus
+			box-shadow: none !important
+		&:hover
+			background: #373f46
+		&:active
+			box-shadow: 0 0 0 0.3em #64717c !important
+
+.footer
+	background: #312A31
+	color: #f3f2f3

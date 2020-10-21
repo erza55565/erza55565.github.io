@@ -2,7 +2,7 @@ let cardsArray = [{
         'image': '<img src="images/Clubberspot.png" class="img-fluid rounded">',
         'headerTitle': 'Clubberspot',
         'header': 'Clubberspot - project which helps to provide safe organization of concerts between venues and musicants from 1 side, and free newsletter for providing information about entertaining events from other side ',
-        'link': '<b>MoreInfo:</b> <a href="https://clubberspot.com/">https://clubberspot.com/</a>',
+        'link': '<a href="https://clubberspot.com/" class="btn d-flex justify-content-center align-items-center">MoreInfo<i class="fas fa-angle-double-right ml-2"></i></a>',
         'team': '4 backend, 3 frontend, 2 mobile dev, 1 devops, 3 designers, 10 copywriters',
 
         'role': 'CTO',
@@ -17,7 +17,7 @@ let cardsArray = [{
         'image': '<img src="images/Sklad1.jpg" class="img-fluid rounded">',
         'headerTitle': 'Sklad#1',
         'header': 'Sklad#1 - marketplace for tires which is working for all countries in CIS. Consists of 3 parts: backend, frontend, analytic engine.',
-        'link': '<b>MoreInfo:</b> <a href="https://skladn1.com/">https://skladn1.com/</a>',
+        'link': '<a href="https://skladn1.com/" class="btn d-flex justify-content-center align-items-center">MoreInfo<i class="fas fa-angle-double-right ml-2"></i></a>',
         'team': '4 developers',
         'role': 'Architect',
         'footerList': '<li>Architecture.</li>' +
@@ -30,7 +30,7 @@ let cardsArray = [{
         'image': '<img src="images/Gran-Call.jpg" class="img-fluid rounded">',
         'headerTitle': 'Gran-Call',
         'header': 'Gran-Call contains internal system for supporting call-center and helps to exchange information between 40_000 users per second.',
-        'link': '<b>MoreInfo:</b><a href="http://gran-soft.ru/">http://gran-soft.ru/</a>',
+        'link': '<a href="http://gran-soft.ru/" class="btn d-flex justify-content-center align-items-center">MoreInfo<i class="fas fa-angle-double-right ml-2"></i></a>',
         'team': '7 developers',
         'role': 'Senior Software Engineer/ DevOps',
         'footerList': '<li>Architecture/Infrastructure.</li>' +
@@ -42,7 +42,7 @@ let cardsArray = [{
         'image': '<img src="images/blockchain infrastructure.jpg" class="img-fluid rounded">',
         'headerTitle': 'Payment banking based on blockchain infrastructure',
         'header': 'Research and investigation which blockchain network will be the best for specific payment transaction. The main idea is comparing, analyze, and select appropriate blockchain network for the specific business transaction. The goal was transaction size, time and confirmation.',
-        'link': '<b>MoreInfo:</b> <a href="https://github.com/imaxfp/blockchain-workbench-rest">https://github.com/imaxfp/blockchain-workbench-rest</a>',
+        'link': '<a href="https://github.com/imaxfp/blockchain-workbench-rest" class="btn d-flex justify-content-center align-items-center">MoreInfo<i class="fas fa-angle-double-right ml-2"></i></a>',
         'team': '3 backend, 3 frontend, 2 devops',
 
         'language': 'Java, Scala',
@@ -178,7 +178,7 @@ let cardsArray = [{
     }
 ];
 
-let button = (tag, iconClass) => `<button class="btn mr-2 mb-2" type="button" disabled><i class="fas ${iconClass}"></i>${tag}</button>`;
+let button = (tag, iconClass) => `<button class="btn mx-1 mb-2" type="button" disabled><i class="fas ${iconClass}"></i>${tag}</button>`;
 let teamTag = (tag) => button(tag, "fa-user-friends px-1");
 let languageTag = (tag) => button(tag, "fa-cog px-1");
 let technologiesTag = (tag) => button(tag, "fa-cog px-1");
@@ -211,24 +211,15 @@ const card = ({ headerTitle, image, header, team, language, technologies, link, 
         <div class="card-view">
             <div class="card-img-top">${image}</div>
             <div class="card-mask"></div>
-            <div class="text-center card-btn-off">${body}</div>
+            <div class="text-center card-btn-off">${body}
+            <div class="card-link d-flex justify-content-center">${link}</div>
+            </div>
         </div>
         <div class="card-header">
             <h5 class="card-title text-center">${headerTitle}</h5>
             <p class="card-text text-justify">${header}</p>
         </div>
-        <div class="card-body">
-            <p class="card-text">
-                <div class="mb-3 text-justify">
-                    ${link}
-                </div>
-            </p>
-        </div>
-        <button class="btn content_toggle mx-auto btn-block" type="button">
-            Tasks performed<i class="fas fa-chevron-down pl-2" id="chevron-icon"></i>
-        </button>
-
-        <div class="card-footer text-justify" style="display: none;">
+        <div class="card-footer text-justify">
             ${footerList}
             ${footerResult}
         </div>
@@ -241,13 +232,6 @@ $(document).ready(function() {
     $('.header').height($(window).height());
     $('#cards').prepend(cardsArray.slice(0, 2).map(card).join(' '));
     $('#collapseCards').html(cardsArray.slice(2, cardsArray.length).map(card).join(' '));
-    $('.content_toggle').each(function() {
-        $(this).click(function() {
-            $(this).next('.card-footer').slideToggle(300);
-            $('#chevron-icon', this).toggleClass('fa-chevron-down fa-chevron-up');
-            return false;
-        });
-    })
 });
 
 $("#contactForm").submit(function(event) {
